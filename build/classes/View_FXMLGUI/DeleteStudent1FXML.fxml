@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.DeleteStudent1FXMLController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1326.0">
+         <children>
+            <TextField fx:id="studentIdTF" prefHeight="35.0" prefWidth="144.0" promptText="Enter Student Id">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <JFXButton fx:id="findStudentBtn" onAction="#findStudentUsingStudentId" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #00D84A; -fx-background-radius: 8px;" text="Find Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Line endX="1218.0" endY="64.5" startX="116.29289245605469" startY="64.5" AnchorPane.topAnchor="64.0" />
+      <HBox prefHeight="520.0" prefWidth="1328.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="250.0" />
+            <VBox prefHeight="539.0" prefWidth="176.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="166.0" text="Full Name             :">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="80.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Father's Name      :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Mother's Name    :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Email                    :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Date of Birth        :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Gender                      :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Mobile No.                :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="520.0" prefWidth="297.0">
+               <children>
+                  <JFXTextField fx:id="fullNameTF" editable="false">
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fatherNameTF" editable="false" layoutX="10.0" layoutY="10.0">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="motherNameTF" editable="false" layoutX="10.0" layoutY="35.0">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailTF" editable="false" layoutX="10.0" layoutY="60.0">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="dobTF" editable="false" layoutX="10.0" layoutY="219.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="genderTF" editable="false" prefHeight="38.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="mobileNoTF" editable="false" layoutX="10.0" layoutY="305.0" prefHeight="38.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <VBox layoutX="260.0" layoutY="10.0" prefHeight="520.0" prefWidth="10.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="436.0" layoutY="10.0" prefHeight="520.0" prefWidth="518.0">
+               <children>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox prefHeight="514.0" prefWidth="481.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="1.0" mnemonicParsing="false" prefHeight="162.0" prefWidth="118.0" text="Browse Pic">
+                           <graphic>
+                              <ImageView fx:id="picImgView" fitHeight="150.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="40.0" top="80.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="154.0" text="Photo" textAlignment="CENTER">
+                           <font>
+                              <Font name="Sitka Text" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="40.0" layoutY="93.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="124.0" text="Browse Sign">
+                           <graphic>
+                              <ImageView fx:id="signImgView" fitHeight="50.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="40.0" top="50.0" />
+                           </VBox.margin>
+                           <effect>
+                              <DropShadow height="15.07" radius="4.8100000000000005" width="6.17" />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="258.0" prefHeight="33.0" prefWidth="154.0" text="Signature" textAlignment="CENTER">
+                           <font>
+                              <Font name="Sitka Text" size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="60.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="1326.0" AnchorPane.topAnchor="550.0">
+         <children>
+            <JFXButton onAction="#deleteStudent" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #8D3DAF; -fx-background-radius: 8px;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

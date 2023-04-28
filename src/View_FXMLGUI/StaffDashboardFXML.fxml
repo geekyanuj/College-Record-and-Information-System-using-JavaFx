@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.StaffDashboardFXMLController">
+   <children>
+      <BorderPane fx:id="bp" prefHeight="387.0" prefWidth="331.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="733.0" prefWidth="298.0" styleClass="vboxNavBox" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <HBox prefHeight="93.0" prefWidth="298.0">
+                     <children>
+                        <Circle fx:id="profilePic" fill="WHITE" radius="36.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets left="16.0" top="5.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <VBox prefHeight="106.0" prefWidth="202.0">
+                           <children>
+                              <MenuButton fx:id="menuBtn" alignment="BASELINE_LEFT" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="202.0" style="-fx-background-color: #242B2E; -fx-color: black;" styleClass="usernameLabelColor" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" text="Username (UserType)" textFill="WHITE">
+                                <items>
+                                  <MenuItem fx:id="manageProfileBtn" mnemonicParsing="false" onAction="#manageProfile" style="-fx-text-fill: black;" text="Manage Profile" />
+                                  <MenuItem fx:id="logoutBtn" mnemonicParsing="false" onAction="#logout" style="-fx-text-fill: black;" text="Logout" />
+                                </items>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </MenuButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="540.0" prefWidth="298.0">
+                     <children>
+                        <Line endX="399.32232666015625" endY="-1.3283953666687012" fill="WHITE" startX="135.0294189453125" startY="-1.328411340713501" strokeDashOffset="50.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="100.0" strokeWidth="3.0">
+                           <stroke>
+                              <RadialGradient centerX="0.4888888888888889" centerY="0.49523809523809526" focusDistance="0.023255813953488413" radius="0.8953488372093024">
+                                 <stops>
+                                    <Stop color="#f300ff" />
+                                    <Stop color="#f300ff" offset="0.007662835249042145" />
+                                    <Stop color="#3300ff" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </stroke>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Line>
+                        <JFXButton fx:id="academicNavBtn" onAction="#openAcademicManagement" prefHeight="55.0" prefWidth="264.0" styleClass="navBtn" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" text="Academic Management">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../MultimediaResources/academicIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="18.0" top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="attendanceNavBtn" onAction="#openAttendanceManagement" prefHeight="56.0" prefWidth="264.0" styleClass="navBtn" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" text="Attendace Management">
+                           <graphic>
+                              <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../MultimediaResources/attendance.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="18.0" top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="learningNavBtn" onAction="#openLearningManagement" prefHeight="56.0" prefWidth="264.0" styleClass="navBtn" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" text="Learning Management">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../MultimediaResources/learning.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="18.0" top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="30.0" top="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="centerBg" stylesheets="@../View_CSSStylesheets/AdminDashboardStylesheet.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="751.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.ManageDepartmentBoardFXMLController">
+   <children>
+      <JFXTabPane layoutX="9.0" layoutY="14.0" prefHeight="340.0" prefWidth="515.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab onSelectionChanged="#onTabChange" text="Add New Department">
+               
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="bp" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="228.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton fx:id="submitBtn" onAction="#submit" styleClass="nextBtn" stylesheets="@../View_CSSStylesheets/ManageStudentBoardStylesheet.css" text="Submit" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="264.0" text="Add New Department">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </top>
+                           <center>
+                              <AnchorPane prefHeight="455.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="261.0" layoutY="8.0" prefHeight="413.0" prefWidth="757.0" style="-fx-background-color: #d6ceaa; -fx-background-radius: 15px;" AnchorPane.leftAnchor="261.0" AnchorPane.topAnchor="8.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="361.0" prefWidth="717.0" style="-fx-background-color: #c78933; -fx-background-radius: 8px;">
+                                             <children>
+                                                <HBox>
+                                                   <padding>
+                                                      <Insets left="100.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="169.0">
+                                                   <children>
+                                                      <Label prefHeight="43.0" prefWidth="220.0" text="Department Name               :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <JFXTextField fx:id="deptNameTF" focusColor="#3a8363" prefHeight="43.0" prefWidth="286.0" promptText="Enter Department Name" unFocusColor="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </HBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="100.0" />
+                                                   </padding>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="169.0">
+                                                   <children>
+                                                      <Label prefHeight="43.0" prefWidth="220.0" text="Department HOD                 :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <JFXTextField fx:id="depHodTF" focusColor="#3a8363" prefHeight="43.0" prefWidth="286.0" promptText="Enter Department HOD" unFocusColor="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </HBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="100.0" />
+                                                   </padding>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                                <HBox layoutX="10.0" layoutY="191.0">
+                                                   <children>
+                                                      <Label prefHeight="43.0" prefWidth="221.0" text="Department Capacity          :" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <JFXTextField fx:id="deptCapacityTF" focusColor="#3a8363" prefHeight="43.0" prefWidth="297.0" promptText="Enter Department Capacity" unFocusColor="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="15.0" />
+                                                         </HBox.margin>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="100.0" />
+                                                   </padding>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="20.0" right="20.0" />
+                                             </VBox.margin>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Display Departments">
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="displayTabBP" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="46.0" prefWidth="1326.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" prefHeight="57.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="261.0" text="Display Departments">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </VBox>
+                           </top>
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <VBox alignment="CENTER" prefHeight="539.0" prefWidth="826.0" style="-fx-background-color: #d6ceaa; -fx-background-radius: 15px;">
+                                             <VBox.margin>
+                                                <Insets left="250.0" right="250.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <TableView fx:id="deptTableView" prefHeight="519.0" prefWidth="816.0" stylesheets="@../View_CSSStylesheets/ManageDepartmentStylesheet.css">
+                                                  <columns>
+                                                    <TableColumn fx:id="deptIdCol" editable="false" prefWidth="110.0" style="-fx-alignment: center;" text="Department Id" />
+                                                    <TableColumn fx:id="deptNameCol" editable="false" minWidth="0.0" prefWidth="253.0" style="-fx-alignment: center;" text="Department Name" />
+                                                      <TableColumn fx:id="deptHodCol" editable="false" minWidth="0.0" prefWidth="269.0" style="-fx-alignment: center;" text="Department HOD" />
+                                                      <TableColumn fx:id="deptCapacityCol" editable="false" minWidth="0.0" prefWidth="183.0" style="-fx-alignment: center;" text="Department Capacity" />
+                                                  </columns>
+                                                   <VBox.margin>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </VBox.margin>
+                                                </TableView>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="Update Existing Department">
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="bp1" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="228.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton onAction="#update" styleClass="nextBtn" stylesheets="@../View_CSSStylesheets/ManageStudentBoardStylesheet.css" text="Update" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="393.0" text="Update Existing Department">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </top>
+                           <center>
+                              <AnchorPane prefHeight="455.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutX="261.0" layoutY="109.0" prefHeight="312.0" prefWidth="757.0" style="-fx-background-color: #d6ceaa; -fx-background-radius: 15px;" AnchorPane.leftAnchor="261.0" AnchorPane.topAnchor="109.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="43.0" prefWidth="220.0" text="Department Name               :" textFill="#721616">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXTextField fx:id="deptNameTFU" focusColor="#3a8363" prefHeight="43.0" prefWidth="286.0" promptText="Enter Department Name" unFocusColor="WHITE">
+                                                   <font>
+                                                      <Font size="17.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </HBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="43.0" prefWidth="220.0" text="Department HOD                 :" textFill="#721616">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXTextField fx:id="depHodTFU" focusColor="#3a8363" prefHeight="43.0" prefWidth="286.0" promptText="Enter Department HOD" unFocusColor="WHITE">
+                                                   <font>
+                                                      <Font size="17.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </HBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="43.0" prefWidth="221.0" text="Department Capacity          :" textFill="#721616">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <JFXTextField fx:id="deptCapacityTFU" focusColor="#3a8363" prefHeight="43.0" prefWidth="297.0" promptText="Enter Department Capacity" unFocusColor="WHITE">
+                                                   <font>
+                                                      <Font size="17.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </HBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="261.0" layoutY="14.0" prefHeight="87.0" prefWidth="757.0" style="-fx-background-color: #575a65; -fx-background-radius: 15px;">
+                                       <children>
+                                          <HBox>
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="10.0">
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="48.0" prefHeight="43.0" prefWidth="699.0">
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1326.0">
+                                                   <children>
+                                                      <TextField fx:id="deptIdTFU" alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="173.0" promptText="Enter Department Id">
+                                                         <font>
+                                                            <Font size="16.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets right="20.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                      <JFXButton onAction="#findDeptUsingStudentId" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #f07241; -fx-background-radius: 8px;" text="Find" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="15.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets left="20.0" />
+                                                         </HBox.margin>
+                                                      </JFXButton>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="86.0">
+                                             <padding>
+                                                <Insets left="100.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Button fx:id="backBtn" graphicTextGap="1.0" layoutX="1243.0" mnemonicParsing="false" onAction="#backToDashboard" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #4C3AE3; -fx-background-radius: 10px;" text="Back" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="1243.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../MultimediaResources/back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

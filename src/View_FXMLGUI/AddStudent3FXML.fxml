@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.AddStudent3FXMLController">
+   <children>
+      <Label id="3" prefHeight="35.0" prefWidth="336.0" styleClass="Heading" text="Previous Academic  Details :-" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="28.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label prefHeight="55.0" prefWidth="223.0" text="Academic Information :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="520.0" prefWidth="1328.0">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="257.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="223.0" text="Last Passed Examination :">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="150.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="198.0" text="Stream Name                  :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="190.0" text="Course Medium              :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="191.0" text="Course Type                    :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="197.0" text="Passing Year                   :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="344.0" prefHeight="31.0" prefWidth="202.0" text="Overall Marks in %         :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="375.0" prefHeight="31.0" prefWidth="198.0" text="Name of University/Board :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="406.0" prefHeight="31.0" prefWidth="193.0" text="School/College Name     :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="520.0" prefWidth="365.0">
+               <children>
+                  <JFXTextField fx:id="lastPassedExaminationTF">
+                     <VBox.margin>
+                        <Insets top="145.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="streamNameTF" layoutX="10.0" layoutY="10.0">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="courseMediumComboBox" prefHeight="40.0" prefWidth="338.0" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="313.0">
+                     <children>
+                        <JFXComboBox fx:id="courseTypeComboBox" prefHeight="40.0" prefWidth="343.0" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="356.0" />
+                  <JFXTextField fx:id="passingYearTF" prefHeight="43.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="marksPercentTF" layoutX="10.0" layoutY="334.0" prefHeight="43.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="boardNameTF" layoutX="10.0" layoutY="377.0" prefHeight="43.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="schoolNameTF" layoutX="10.0" layoutY="420.0" prefHeight="43.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="234.0" layoutY="10.0" prefHeight="520.0" prefWidth="501.0">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="191.0" text="Subject Details :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="284.0" prefWidth="453.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <TableView fx:id="subjectTableView" prefHeight="284.0" prefWidth="453.0">
+                          <columns>
+                            <TableColumn fx:id="slNoColumn" prefWidth="36.0" style="-fx-border-color: purple;" text="#" />
+                            <TableColumn fx:id="subjectNameColumn" prefWidth="306.0" style="-fx-border-color: purple;" text="Subject Name" />
+                              <TableColumn fx:id="marksSecuredColumn" minWidth="0.0" prefWidth="108.0" style="-fx-border-color: purple;" text="Marks Secured" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="473.0">
+                     <children>
+                        <TextField fx:id="subjectNameTF" layoutX="10.0" layoutY="10.0" promptText="Enter Subject Name">
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="marksSecuredTF" promptText="Enter Marks Secured">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="addSubjectBtn" mnemonicParsing="false" onAction="#addSubjectToTable" prefHeight="25.0" prefWidth="102.0" text="Add Subject">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="RemoveSubjectBtn" mnemonicParsing="false" onAction="#removeSubjectFromTable" text="Remove Subject">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.AssignSubjectFXMLController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="12.0" prefHeight="583.0" prefWidth="473.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="12.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="41.0" prefWidth="515.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="147.0" text="Assign Subject">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets left="32.0" />
+               </VBox.margin>
+               <children>
+                  <Line endX="339.29290771484375" endY="0.6213081479072571" fill="WHITE" startX="-100.0" />
+               </children>
+            </HBox>
+            <VBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="69.0" prefHeight="50.0" prefWidth="515.0" />
+            <HBox fx:id="ap" prefHeight="483.0" prefWidth="486.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="495.0" prefWidth="422.0" style="-fx-border-color: #353634; -fx-border-width: 3; -fx-border-insets: -5;">
+                     <HBox.margin>
+                        <Insets left="32.0" right="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="189.0" prefWidth="422.0">
+                           <children>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="189.0" prefWidth="165.0" style="-fx-border-color: black; -fx-border-radius: 8px;">
+                                 <children>
+                                    <ImageView fx:id="picIV" fitHeight="150.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../MultimediaResources/username.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="87.0" text="Name">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="designationLabel" alignment="CENTER" contentDisplay="CENTER" text="Designation" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="-25.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="275.0">
+                           <children>
+                              <Label prefWidth="100.0" text="Faculty Name">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text=":">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="facultyNameCB" onAction="#facultyNameCBStateChange" prefWidth="207.0" styleClass="combo-box" stylesheets="@../View_CSSStylesheets/AssignSubjectStylesheet.css">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="196.0" prefHeight="45.0" prefWidth="422.0">
+                           <children>
+                              <Label prefWidth="100.0" text="Subject Name">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="53.0" layoutY="22.0" text=":">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="subjectNameCB" prefWidth="207.0" styleClass="combo-box" stylesheets="@../View_CSSStylesheets/AssignSubjectStylesheet.css">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="422.0">
+                           <children>
+                              <Label prefWidth="100.0" text="Department">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="53.0" layoutY="22.0" text=":">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="departmentCB" prefWidth="207.0" styleClass="combo-box" stylesheets="@../View_CSSStylesheets/AssignSubjectStylesheet.css">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="233.0" prefHeight="45.0" prefWidth="422.0">
+                           <children>
+                              <Label prefWidth="100.0" text="Semester">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text=":">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="semesterCB" prefWidth="207.0" styleClass="combo-box" stylesheets="@../View_CSSStylesheets/AssignSubjectStylesheet.css">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="270.0" prefHeight="45.0" prefWidth="422.0">
+                           <children>
+                              <Label prefWidth="100.0" text="Position">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="53.0" layoutY="22.0" text=":">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="positionCB" prefWidth="207.0" styleClass="combo-box" stylesheets="@../View_CSSStylesheets/AssignSubjectStylesheet.css">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="assignSubjectBtn" mnemonicParsing="false" onAction="#assignSubject" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #340735; -fx-background-radius: 10px;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>

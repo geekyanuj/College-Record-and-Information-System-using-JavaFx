@@ -1,0 +1,51 @@
+.root{
+    -fx-background-image: url('../MultimediaResources/bgLogin.png');
+    -fx-background-size: cover;
+}
+
+.btnColor{
+    -fx-background-color: #9424F0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.btnColor:hover{
+    -fx-background-color: #BD297A;
+/*    -fx-border-radius: 20;
+    -fx-background-radius: 20;*/
+}
+
+.usernameLabelColor{
+    -fx-text-fill:black;
+}
+
+.forgotPasswordLabel{
+    -fx-text-fill:blueviolet;
+}
+
+.forgotPasswordLabel:hover{
+    -fx-text-fill:blue;
+}
+
+.userTypeComboBox{
+    -fx-background-color:transparent;
+    -fx-background-radius:5;
+    -fx-text-fill:#ffffff;
+    -fx-font-size:15;
+}
+
+.userTypeComboBox:hover{
+    -fx-background-color:#CAD5E2;
+    
+    -fx-text-fill:#ffffff;
+    
+}
+                
+
+.labelDhanabd{
+    -fx-font-family: Georgia, serif;
+    -fx-text-fill:whitesmoke;
+    -fx-font-size:40;
+    
+}
+
+

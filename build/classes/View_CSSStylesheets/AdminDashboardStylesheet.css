@@ -1,0 +1,45 @@
+.root{
+    -fx-background-image:url(../MultimediaResources/bgAdminDashboard.png); 
+    -fx-background-size:cover; 
+}
+
+.profilePic{
+    -fx-background-radius: 200;
+    -fx-padding: 10;
+    -fx-background-color: firebrick;
+}
+
+.usernameLabelColor{
+    -fx-text-fill: #ffffff;
+    -fx-color:red;
+    -fx-font-size:15px; 
+    -fx-background-color: #242B2E;
+    
+    
+}
+
+
+
+.vboxNavBox{
+    -fx-background-radius: 10px;
+    -fx-background-color: #242B2E;
+    
+}
+
+.navBtn{
+    -fx-background-radius: 15px;
+      /*-fx-background-color: #FC1260;*/
+      -fx-background-color: #E03B8B;
+      -fx-text-fill:white;
+      -fx-font-weight: bold;
+      -fx-alignment: CENTER_LEFT;
+}
+
+.navBtn:hover{
+    -fx-background-color: #E03BFF;
+}
+
+.navBtn:pressed{
+    /*-fx-background-color: blue;*/
+}
+

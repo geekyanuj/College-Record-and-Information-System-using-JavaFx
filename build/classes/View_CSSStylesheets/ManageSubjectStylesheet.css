@@ -1,0 +1,8 @@
+.root{
+    -fx-background-image: url(../MultimediaResources/bgAddStudentCommon.png);
+    -fx-background-size: 1366px 751px;
+}
+
+.navBtn{
+    -fx-background-color: #ccd91a;
+}

@@ -1,0 +1,28 @@
+.btn{
+    /*-fx-background-color:*/ 
+        /*-fx-background-color:*/ 
+        -fx-background-color: linear-gradient(#647DEE 10%,  #01baef 74%);
+        -fx-background-radius: 0 20 0 20;
+        
+        
+}
+
+.btn:hover,.btn:focus{
+
+    -fx-padding: 0 5 10 10;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-color: 
+        linear-gradient(from 0% 3% to 0% 100%, #647DEE 10%, #01baef 100%),
+        #647DEE,
+        #01baef,
+        radial-gradient(center 50% 50%, radius 100%, #647DEE, #01baef);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+
+}
+
+.icon{
+    -fx-background-color: white;
+    -fx-background-radius: 0 20 0 18.5;
+    /*-fx-border-radius: 0 20 0 20;*/
+    
+}

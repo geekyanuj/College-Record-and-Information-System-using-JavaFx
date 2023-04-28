@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="554.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.AddStudent1FXMLController">
+   <children>
+      <HBox prefHeight="548.0" prefWidth="1328.0">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="250.0">
+               <children>
+                  <Label id="1" fx:id="HeadingLabel" prefHeight="35.0" prefWidth="244.0" styleClass="Heading" text="Personal Details :-">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="22.0" top="28.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="1.0" mnemonicParsing="false" onAction="#choosePic" prefHeight="162.0" prefWidth="118.0" text="Browse Pic">
+                     <graphic>
+                        <ImageView fx:id="picImgView" fitHeight="150.0" fitWidth="132.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="154.0" text="Photo" textAlignment="CENTER">
+                     <font>
+                        <Font name="Sitka Text" size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="40.0" layoutY="93.0" mnemonicParsing="false" onAction="#chooseSign" prefHeight="38.0" prefWidth="124.0" text="Browse Sign">
+                     <graphic>
+                        <ImageView fx:id="signImgView" fitHeight="50.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="40.0" top="50.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow height="15.07" radius="4.8100000000000005" width="6.17" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="258.0" prefHeight="33.0" prefWidth="154.0" text="Signature" textAlignment="CENTER">
+                     <font>
+                        <Font name="Sitka Text" size="19.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="539.0" prefWidth="176.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="166.0" text="Full Name             :">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="80.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Father's Name      :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Mother's Name    :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Email                    :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Date of Birth        :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Id Card Type        :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Id Card No.          :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Caste Category    :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Religion               :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Nationality            :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="520.0" prefWidth="297.0">
+               <children>
+                  <JFXTextField fx:id="fullNameTF" promptText="Enter Full Name">
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fatherNameTF" layoutX="10.0" layoutY="10.0" promptText="Enter Father's Name">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="motherNameTF" layoutX="10.0" layoutY="35.0" promptText="Enter Mother's Name">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="emailTF" layoutX="10.0" layoutY="60.0" promptText="Enter Email">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="dobTF" prefHeight="38.0" prefWidth="304.0" promptText="Enter DOB" style="-fx-font-size: 17;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXComboBox fx:id="idTypeComboBox" prefHeight="43.0" prefWidth="305.0" promptText="Select Id Card Type" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css" />
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="idCardNoTF" promptText="Enter Id No">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox layoutX="10.0" layoutY="313.0">
+                     <children>
+                        <JFXComboBox fx:id="casteCategoryComboBox" prefHeight="43.0" prefWidth="305.0" promptText="Select Caste Category" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin></JFXComboBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="356.0">
+                     <children>
+                        <JFXComboBox fx:id="religionComboBox" prefHeight="43.0" prefWidth="305.0" promptText="Select Religion" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                           <HBox.margin>
+                              <Insets top="3.0" />
+                           </HBox.margin></JFXComboBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <JFXComboBox fx:id="nationalityComboBox" prefHeight="43.0" prefWidth="305.0" promptText="Select Nationality" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="260.0" layoutY="10.0" prefHeight="520.0" prefWidth="186.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="166.0" text="Blood Group             :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="80.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Gender                      :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Marital Status            :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Mobile No.                :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Differently Abled       :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Have State Domecile :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="366.0" prefHeight="31.0" prefWidth="170.0" text="Course Enrolled         :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Department                 :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="397.0" prefHeight="31.0" prefWidth="170.0" text="Current Semester       :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="428.0" prefHeight="31.0" prefWidth="170.0" text="Session                       :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="436.0" layoutY="10.0" prefHeight="520.0" prefWidth="297.0">
+               <children>
+                  <JFXComboBox fx:id="bloodGroupComboBox" prefHeight="37.0" prefWidth="302.0" promptText="Select Blood Group" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox prefHeight="41.0" prefWidth="327.0">
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXRadioButton fx:id="maleRadio" prefHeight="40.0" prefWidth="96.0" text="Male">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="femaleRadio" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="109.0" text="Female">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="otherRadio" layoutX="106.0" layoutY="10.0" prefHeight="39.0" prefWidth="90.0" text="Other">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </HBox>
+                  <JFXComboBox fx:id="maritalStatusComboBox" prefHeight="40.0" prefWidth="297.0" promptText="Select Marital Status" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css" />
+                  <JFXTextField fx:id="mobileNoTF" layoutX="10.0" layoutY="60.0" promptText="Enter Mobile Number">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="pwdComboBox" prefHeight="44.0" prefWidth="330.0" promptText="Select PwD Category" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox>
+                     <children>
+                        <JFXRadioButton fx:id="haveDomecileNoRadio" prefHeight="46.0" prefWidth="159.0" text="No">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="haveDomecileYesRadio" prefHeight="46.0" prefWidth="159.0" text="Yes">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="4.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXComboBox fx:id="courseEnrolledCB" onAction="#courseEnrolledCBStateChanged" prefHeight="37.0" prefWidth="302.0" promptText="Select Course Enrolled" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="departmentCB" onAction="#currentDepartmentCBStateChanged" prefHeight="37.0" prefWidth="302.0" promptText="Select Department" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="9.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="currentSemesterCB" layoutX="10.0" layoutY="407.0" onAction="#currentSemesterCBStateChanged" prefHeight="37.0" prefWidth="302.0" promptText="Select Semester" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXComboBox fx:id="sessionCB" layoutX="10.0" layoutY="444.0" onAction="#sessionCBStateChanged" prefHeight="37.0" prefWidth="302.0" promptText="Select Session" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

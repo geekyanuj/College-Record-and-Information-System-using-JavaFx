@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="611.0" prefWidth="1366.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller_FXMLController.DisplayStaffFXMLController">
+   <children>
+      <TableView fx:id="staffTV" prefHeight="611.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="96.0" text="Id" />
+          <TableColumn fx:id="nameCol" prefWidth="219.99996948242188" text="Name" />
+            <TableColumn fx:id="genderCol" minWidth="0.0" prefWidth="92.0" text="Gender" />
+            <TableColumn fx:id="emailCol" prefWidth="232.0" text="Email" />
+            <TableColumn fx:id="mobileCol" prefWidth="170.0" text="Mobile " />
+            <TableColumn fx:id="qualifiactionCol" prefWidth="215.0" text="Qualification" />
+            <TableColumn fx:id="designationCol" minWidth="0.0" prefWidth="195.0" text="Designation" />
+            <TableColumn fx:id="experienceCol" prefWidth="144.0" text="Experience" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="751.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.ManageStudentBoardFXMLController">
+   <children>
+      <JFXTabPane layoutX="9.0" layoutY="14.0" prefHeight="340.0" prefWidth="515.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Add Student">
+               <content>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="bp" prefHeight="714.0" prefWidth="1326.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="38.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <JFXButton fx:id="previousBtn" buttonType="RAISED" onAction="#pervious" styleClass="previousBtn" stylesheets="@../View_CSSStylesheets/ManageStudentBoardStylesheet.css" text="Previous" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="nextBtn" onAction="#next" styleClass="nextBtn" stylesheets="@../View_CSSStylesheets/ManageStudentBoardStylesheet.css" text="Next" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                    <JFXButton fx:id="submitBtn" onAction="#submit" styleClass="submitBtn" stylesheets="@../View_CSSStylesheets/ManageStudentBoardStylesheet.css" text="Submit" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold Italic" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </JFXButton>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="153.0" text="Add Student">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="TOP_CENTER" prefHeight="62.0" prefWidth="1366.0">
+                                       <children>
+                                          <StackPane>
+                                             <children>
+                                                <Line fx:id="arrow1" endX="100.0" fill="#708fab" startX="-100.0" stroke="#708fab" strokeWidth="3.0" translateX="100.0" />
+                                                <Circle fill="#51dd45" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="9.46875">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Line fx:id="arrow2" endX="100.0" startX="-100.0" stroke="#708fab" strokeWidth="3.0" translateX="100.0" />
+                                                <Circle fx:id="circle2" fill="#708fab" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2" wrappingWidth="9.46875">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="211.0" layoutY="10.0">
+                                             <children>
+                                                <Line fx:id="arrow3" endX="100.0" startX="-100.0" stroke="#708fab" strokeWidth="3.0" translateX="100.0" />
+                                                <Circle fx:id="circle3" fill="#708fab" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3" wrappingWidth="9.46875">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <StackPane layoutX="412.0" layoutY="10.0" prefHeight="100.0" prefWidth="188.0">
+                                             <children>
+                                                <Circle fx:id="circle4" fill="#708fab" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="4" wrappingWidth="9.46875">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Display Student">
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="displayTabBP" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="46.0" prefWidth="1326.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" prefHeight="57.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="191.0" text="Display Student">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </VBox>
+                           </top>
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="Update Student">
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="updateTabBP" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="1326.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" prefHeight="57.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="191.0" text="Update Student">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </VBox>
+                           </top>
+                           <center>
+                              <AnchorPane prefHeight="618.0" prefWidth="1326.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Delete Student">
+               <content>
+                  <AnchorPane prefHeight="691.0" prefWidth="1366.0" styleClass="root" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <children>
+                        <BorderPane fx:id="deleteTabBP" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                           <bottom>
+                              <HBox alignment="TOP_CENTER" prefHeight="46.0" prefWidth="1326.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <top>
+                              <VBox alignment="TOP_CENTER" prefHeight="57.0" prefWidth="1326.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="41.0" prefWidth="191.0" text="Delete Student">
+                                       <font>
+                                          <Font name="System Bold" size="25.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </VBox>
+                           </top>
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Button fx:id="backBtn" graphicTextGap="1.0" layoutX="1243.0" mnemonicParsing="false" onAction="#backToDashboard" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #4C3AE3; -fx-background-radius: 10px;" text="Back" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="1243.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../MultimediaResources/back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

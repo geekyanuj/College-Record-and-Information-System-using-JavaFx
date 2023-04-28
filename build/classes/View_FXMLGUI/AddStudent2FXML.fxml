@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.AddStudent2FXMLController">
+   <children>
+      <HBox prefHeight="520.0" prefWidth="1328.0">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="224.0">
+               <children>
+                  <Label id="2" prefHeight="35.0" prefWidth="244.0" styleClass="Heading" text="Address Details :-">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="22.0" top="28.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="539.0" prefWidth="176.0">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="177.0" text="Present Address :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="158.0" text="Address Line 1     :">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="City Name            :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="State Name          :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="District Name       :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="170.0" text="Pin Code               :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="520.0" prefWidth="297.0">
+               <children>
+                  <JFXTextField fx:id="presentAddressLine1TF">
+                     <VBox.margin>
+                        <Insets top="145.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="presentCityNameTF" layoutX="10.0" layoutY="10.0">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="presentStateNameComboBox" onAction="#presentStateNameChange" prefHeight="43.0" prefWidth="305.0" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="313.0">
+                     <children>
+                        <JFXComboBox fx:id="presentDistrictNameComboBox" prefHeight="40.0" prefWidth="305.0" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="356.0" />
+                  <JFXTextField fx:id="presentPinCodeTF" prefHeight="43.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <VBox layoutX="234.0" layoutY="10.0" prefHeight="520.0" prefWidth="204.0">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="191.0" text="Permanent Address :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="132.0" text="Address Line 1     :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="132.0" text="City Name            :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="132.0" text="State Name          :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="132.0" text="District Name       :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="132.0" text="Pin Code              :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="45.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="410.0" layoutY="10.0" prefHeight="520.0" prefWidth="297.0">
+               <children>
+                  <JFXTextField fx:id="permanentAddressLine1TF">
+                     <VBox.margin>
+                        <Insets top="145.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="permanentCityNameTF" layoutX="10.0" layoutY="10.0">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="permanentStateNameComboBox" onAction="#permanentStateNameChange" prefHeight="43.0" prefWidth="305.0" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css">
+                     <VBox.margin>
+                        <Insets top="6.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="313.0">
+                     <children>
+                        <JFXComboBox fx:id="permanentDistrictNameComboBox" prefHeight="40.0" prefWidth="305.0" styleClass="comboBox" stylesheets="@../View_CSSStylesheets/AddStudent1Stylesheet.css" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="356.0" />
+                  <JFXTextField fx:id="permanentPinCodeTF" prefHeight="43.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

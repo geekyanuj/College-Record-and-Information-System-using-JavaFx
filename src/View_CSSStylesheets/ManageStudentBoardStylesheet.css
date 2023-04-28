@@ -1,0 +1,20 @@
+.root{
+    -fx-background-image:url(../MultimediaResources/bgAddStudentCommon.png); 
+    -fx-background-size:1366px 720px; 
+    -fx-background-repeat: no-repeat;
+}
+
+.previousBtn{
+    -fx-background-color: #DB0B5F;
+    -fx-background-radius: 8px;
+}
+
+.nextBtn{
+    -fx-background-color: #4DDF0D;
+    -fx-background-radius: 8px;
+}
+
+.submitBtn{
+    -fx-background-color: #8D3DAF;
+    -fx-background-radius: 8px;
+}

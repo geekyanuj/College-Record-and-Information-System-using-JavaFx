@@ -1,0 +1,55 @@
+.root{
+    -fx-background-image : url(../MultimediaResources/ManageProfileBg.png);
+    -fx-background-size : 600px 700px;
+    -fx-background-repeat: no-repeat;
+}
+
+.tf{
+    -fx-background-radius:20px;
+    
+    -fx-background-effect:dropshadow(gaussian, blue, 10, 0.8, 3.5, 0.0);
+    /*-fx-background-color:linear-gradient(#8d2cf7,#ffffff,#8d2cf7);*/
+    -fx-background-color:whitesmoke;
+    
+    
+}
+
+.tf:hover{
+    -fx-effect:dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.8, 3.5, 0.0);
+}
+
+.tf:pressed{
+    -fx-background-color:#758283;
+}
+
+.tfName{
+    -fx-background-image : url(../MultimediaResources/username.png);
+    -fx-background-size:45px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:  left center;
+     
+}
+.tfEmail{
+    -fx-background-image : url(../MultimediaResources/email.png);
+    -fx-background-size:45px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+}
+.tfPhone{
+    -fx-background-image : url(../MultimediaResources/phone.png);
+    -fx-background-size:45px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+}
+.tfPassoword{
+    -fx-background-image : url(../MultimediaResources/password.png);
+    -fx-background-size:45px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+
+}
+
+.updateBtn{
+    -fx-background-color:#9424F0;
+    -fx-background-radius:20px;
+}

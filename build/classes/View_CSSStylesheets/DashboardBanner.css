@@ -1,0 +1,6 @@
+.root{
+    -fx-background-image: url(../MultimediaResources/pkrmc2.jpg);
+    -fx-background-size: cover;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}

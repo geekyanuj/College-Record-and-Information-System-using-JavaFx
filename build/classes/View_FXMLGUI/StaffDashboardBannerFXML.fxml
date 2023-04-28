@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.StaffDashboardBannerFXMLController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="264.0" layoutY="350.0" prefHeight="81.0" prefWidth="286.0" text="Welcome Staff" textAlignment="CENTER" AnchorPane.leftAnchor="264.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <VBox layoutX="8.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="105.0" prefWidth="781.0">
+               <children>
+                  <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Your Subjects" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <VBox prefHeight="74.0" prefWidth="54.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                           <children>
+                              <ImageView fitHeight="55.0" fitWidth="69.0" pickOnBounds="true" smooth="false">
+                                 <image>
+                                    <Image url="@../MultimediaResources/subjectIcon2.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </graphic>
+                     <font>
+                        <Font name="Lucida Bright Demibold" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+                     </effect>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

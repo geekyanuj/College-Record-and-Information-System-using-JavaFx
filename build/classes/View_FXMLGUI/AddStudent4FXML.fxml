@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.AddStudent4FXMLController">
+   <children>
+      <Label id="4" prefHeight="35.0" prefWidth="254.0" styleClass="Heading" text="Documents Details :-" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="28.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="520.0" prefWidth="1328.0">
+         <children>
+            <VBox prefHeight="520.0" prefWidth="200.0" />
+            <VBox prefHeight="520.0" prefWidth="218.0">
+               <children>
+                  <Label prefHeight="55.0" prefWidth="177.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="75.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="217.0" text="ID Card Proof                    :">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="198.0" text="10th Marksheet                :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="201.0" text="12th Marksheet                :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="196.0" text="12th Migration                 :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="200.0" text="12th Transfer Certificate   :">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="520.0" prefWidth="424.0">
+               <children>
+                  <HBox prefHeight="25.0" prefWidth="304.0">
+                     <VBox.margin>
+                        <Insets top="155.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="idProofTF" disable="true" editable="false" prefHeight="25.0" prefWidth="328.0" promptText="idProofTF" text="No File Choosen" />
+                        <JFXButton fx:id="idProofChooseBtn" onAction="#idProofChoose" prefHeight="25.0" prefWidth="83.0" styleClass="chooseBtn" stylesheets="@../View_CSSStylesheets/AddStudent4Stylesheet.css" text="Choose File" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="22.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="tenthMarksheetTF" disable="true" editable="false" prefWidth="328.0" text="No File Choosen" />
+                        <JFXButton fx:id="tenthMarksheetChooseBtn" onAction="#tenthMarksheetChoose" prefWidth="83.0" styleClass="chooseBtn" stylesheets="@../View_CSSStylesheets/AddStudent4Stylesheet.css" text="Choose File" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="twelfthMarksheetTF" disable="true" editable="false" prefWidth="328.0" text="No File Choosen" />
+                        <JFXButton fx:id="twelfthMarksheetChooseBtn" onAction="#twelfthMarksheetChoose" prefWidth="83.0" styleClass="chooseBtn" stylesheets="@../View_CSSStylesheets/AddStudent4Stylesheet.css" text="Choose File" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="twelfthMigrationTF" disable="true" editable="false" prefWidth="328.0" text="No File Choosen" />
+                        <JFXButton fx:id="twelfthMigrationChooseBtn" onAction="#twelfthMigrationChoose" prefWidth="83.0" styleClass="chooseBtn" stylesheets="@../View_CSSStylesheets/AddStudent4Stylesheet.css" text="Choose File" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="twelfthTCTF" disable="true" editable="false" prefWidth="328.0" text="No File Choosen" />
+                        <JFXButton fx:id="twelfthTCChooseBtn" onAction="#twelfthTCChoose" prefWidth="83.0" styleClass="chooseBtn" stylesheets="@../View_CSSStylesheets/AddStudent4Stylesheet.css" text="Choose File" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

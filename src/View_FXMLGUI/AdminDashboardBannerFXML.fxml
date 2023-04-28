@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.AdminDashboardBannerFXMLController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="349.0" layoutY="329.0" prefHeight="81.0" prefWidth="286.0" text="Welcome Admin" textAlignment="CENTER" AnchorPane.leftAnchor="349.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="105.0" prefWidth="939.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Total Students" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <VBox prefHeight="74.0" prefWidth="69.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                     <children>
+                        <Label fx:id="totalStudentLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="67.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+               </effect>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Total Staff" textFill="WHITE">
+               <graphic>
+                  <VBox prefHeight="74.0" prefWidth="69.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                     <children>
+                        <Label fx:id="totalStaffLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="67.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+               </effect>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Total Subjects" textFill="WHITE">
+               <graphic>
+                  <VBox prefHeight="74.0" prefWidth="69.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                     <children>
+                        <Label fx:id="totalSubjectsLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="67.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+               </effect>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox layoutY="167.0" prefHeight="105.0" prefWidth="939.0">
+         <children>
+            <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Total Courses" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <VBox prefHeight="74.0" prefWidth="69.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                     <children>
+                        <Label fx:id="totalCoursesLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="67.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+               </effect>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Total Dept." textFill="WHITE">
+               <graphic>
+                  <VBox prefHeight="74.0" prefWidth="69.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                     <children>
+                        <Label fx:id="totalDeptLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="67.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+               </effect>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="8.0" prefHeight="86.0" prefWidth="210.0" styleClass="btn" stylesheets="@../View_CSSStylesheets/DashboardBannerStylesheet.css" text="Total " textFill="WHITE">
+               <graphic>
+                  <VBox prefHeight="74.0" prefWidth="69.0" scaleY="1.16" styleClass="icon" translateX="-10.8">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="74.0" prefWidth="67.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="43.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </graphic>
+               <font>
+                  <Font name="Lucida Bright Demibold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Reflection bottomOpacity="0.03" fraction="0.57" topOffset="0.5" topOpacity="0.38" />
+               </effect>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

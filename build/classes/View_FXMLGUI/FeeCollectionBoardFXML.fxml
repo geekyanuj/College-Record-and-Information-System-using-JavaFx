@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="751.0" prefWidth="1366.0" stylesheets="@../View_CSSStylesheets/ManageSubjectStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.FeesCollectionBoardFXMLController">
+   <children>
+      <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="169.0" text="Fee Collection">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="28.0" prefWidth="1326.0">
+               <VBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="40.0" prefWidth="115.0" text="Student Id">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="studentIdTF" prefHeight="35.0" prefWidth="249.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#findStudent" prefHeight="30.0" prefWidth="63.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../MultimediaResources/search2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="524.0" prefWidth="1281.0">
+               <VBox.margin>
+                  <Insets left="42.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="761.0" style="-fx-border-color: black; -fx-border-radius: 6px;">
+                     <children>
+                        <HBox>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="231.0" text="Student Name">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="55.0" text=":">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="nameTF" prefHeight="35.0" prefWidth="300.0">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Student Father Name">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="fnameTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Student DOB">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="dobTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="38.0" prefWidth="709.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="88.0" text="Semester ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="104.0" layoutY="10.0" prefHeight="38.0" prefWidth="143.0" text="(for which fee is to be collected)">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="semesterTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Department">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="deptTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Course Fee Amount">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="courseFeeTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Paid Till Semester">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="paidTillSemTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Total Paid Amount">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="totalPaidAmtTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="28.0" prefWidth="1326.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="231.0" text="Due Amount">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="38.0" prefWidth="55.0" text=":">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="dueAmtTF" prefHeight="35.0" prefWidth="300.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="511.0" style="-fx-border-color: black; -fx-border-radius: 8px;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <TextArea fx:id="area" prefHeight="524.0" prefWidth="499.0" styleClass="text-area" stylesheets="@../View_CSSStylesheets/FeeCollectionBoardStylesheet.css">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1366.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#generateReceipt" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #ffbc11;" text="Generate Receipt" textFill="#4a3f3f">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #ffbc11;" text="Save Details" textFill="#4a3f3f">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="117.0" layoutY="10.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #ffbc11;" text="Reset" textFill="#4a3f3f">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="printBtn" layoutX="197.0" layoutY="10.0" mnemonicParsing="false" onAction="#printReceipt" prefHeight="30.0" prefWidth="125.0" style="-fx-background-color: #ffbc11;" text="Print" textFill="#4a3f3f">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="backBtn" graphicTextGap="1.0" mnemonicParsing="false" onAction="#backToDashboard" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: #4C3AE3; -fx-background-radius: 10px;" text="Back" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="1243.0" AnchorPane.topAnchor="3.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../MultimediaResources/back_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

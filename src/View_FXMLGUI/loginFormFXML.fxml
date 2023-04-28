@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1150.0" styleClass="root" stylesheets="@../View_CSSStylesheets/loginFormStylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller_FXMLController.loginFormFXMLController">
+   <children>
+      <HBox prefHeight="298.0" prefWidth="513.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="533.0" prefWidth="485.0">
+               <HBox.margin>
+                  <Insets bottom="60.0" left="605.0" top="60.0" />
+               </HBox.margin>
+               <children>
+                  <JFXComboBox fx:id="userTypeComboBox" focusColor="WHITE" prefHeight="33.0" prefWidth="116.0" promptText="User Type" styleClass="userTypeComboBox" stylesheets="@../View_CSSStylesheets/loginFormStylesheet.css" unFocusColor="WHITE">
+                     <VBox.margin>
+                        <Insets left="190.0" top="110.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <padding>
+                        <Insets left="7.0" right="2.0" top="2.0" />
+                     </padding>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="emailTF" labelFloat="true" promptText="Email" style="-fx-font-size: 25;" styleClass="usernameLabelColor" stylesheets="@../View_CSSStylesheets/loginFormStylesheet.css" unFocusColor="#252424">
+                     <VBox.margin>
+                        <Insets left="55.0" right="50.0" top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordTF" labelFloat="true" prefHeight="54.0" prefWidth="436.0" promptText="Password" style="-fx-font-size: 25;" styleClass="usernameLabelColor" stylesheets="@../View_CSSStylesheets/loginFormStylesheet.css">
+                     <VBox.margin>
+                        <Insets left="55.0" right="50.0" top="70.0" />
+                     </VBox.margin>
+                  </JFXPasswordField>
+                  <Label fx:id="forgotPasswordLabel" onMouseClicked="#forgotPassword" styleClass="forgotPasswordLabel" stylesheets="@../View_CSSStylesheets/loginFormStylesheet.css" text="Forgot Password?">
+                     <VBox.margin>
+                        <Insets left="300.0" top="8.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <JFXButton fx:id="loginBtn" buttonType="RAISED" onAction="#login" prefHeight="40.0" prefWidth="308.0" ripplerFill="#bf0000" styleClass="btnColor" stylesheets="@../View_CSSStylesheets/loginFormStylesheet.css" text="Login" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="83.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

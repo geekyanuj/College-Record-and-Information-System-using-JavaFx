@@ -1,0 +1,35 @@
+.root{
+    -fx-background-image:url(../MultimediaResources/addStaffBg2.jpg);
+    -fx-background-size:cover;
+    
+}
+
+
+.comboBox{
+    -fx-font-size:14px;
+    -fx-background-color:transparent;  
+}
+
+.texttfields{
+    -fx-prompt-text-fill: WHITE;
+    -fx-font-size:15px;
+    -fx-text-fill:white;
+    -fx-color: white;
+}
+
+.gendercomboBox{
+    -fx-background-color:transparent;
+}
+
+.jfx-combo-box {
+    -fx-prompt-text-fill: white;
+}
+
+.jfx-combo-box .cell{
+    -fx-text-fill: #FFFFFF;
+    -fx-text-inner-color: white;
+    -fx-background-color:transparent;
+}
+.combo-box .cell:hover {
+-fx-background-color: #d81b60
+}
